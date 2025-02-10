@@ -26,7 +26,7 @@ artist - album - song title - year/date - genre - track number - total tracks (i
 **details:**  
 length - bits/bitrate - channels - sample rate - file id (foreign key to files)
 
-**A simple query would give you back your results**
+#### A simple query would give you back your results
 
 ```sqlite3
 select f.location, m.artist, m.album, m.title, m.year, m.tracknumber, m.totaltracks, d.length, d.bits, d.sample_rate from files f 
