@@ -36,3 +36,5 @@ where f.location like "%Crazy English Summer%";
 ```
 
 On my old computer it indexes 1500 files within 1 minute, so it should be fast!
+
+![Command output](/../main/screenshots/output.png?raw=true")
