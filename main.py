@@ -14,6 +14,7 @@ parser.add_argument('--database', '-f', help = "The name of the database file to
 # Print help if the user did not supply command arguments
 if len(sys.argv) < 2:
     print(parser.format_help())
+    exit(0)
 
 args = parser.parse_args()
 
