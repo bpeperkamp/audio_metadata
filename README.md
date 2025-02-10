@@ -10,18 +10,18 @@ The resulting database is Sqlite file which you can use to search and query. It 
 python main.py -d /music -f outfile
 ```
 
--d, or --directory is the directory to index.
--f, or --database is the intended output file. It is optional, the default is music. (it will output music.db3 in the current path).
+-d, or --directory is the directory to index.  
+-f, or --database is the intended output file. It is optional, the default is music. (it will output music.db3 in the current path).  
 
 The resulting database will have the "files", "metadata" and "details" tables.
 
 The stored information is as following:
 
-files:
+files:  
 filename - directory - full location - file extension - index date
 
-metadata:
+metadata:  
 artist - album - song title - year/date - genre - track number - total tracks (in case of album)
 
-details:
+details:  
 length - bits/bitrate - channels - sample rate
