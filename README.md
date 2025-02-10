@@ -7,7 +7,7 @@ The resulting database is Sqlite file which you can use to search and query. It 
 ## You can use it as following
 
 ```bash
-python main.py -d /music -f outfile
+python main.py -d /directory/music -f outfile
 ```
 
 -d, or --directory is the directory to index.  
@@ -15,13 +15,13 @@ python main.py -d /music -f outfile
 
 The resulting database will have the "files", "metadata" and "details" tables.
 
-The stored information is as following:
+### The stored information is as following
 
-files:  
+**files:**  
 filename - directory - full location - file extension - index date
 
-metadata:  
+**metadata:**  
 artist - album - song title - year/date - genre - track number - total tracks (in case of album)
 
-details:  
+**details:**  
 length - bits/bitrate - channels - sample rate
