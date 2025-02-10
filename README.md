@@ -34,3 +34,5 @@ left join metadata m on f.id = m.file_id
 left join details d on f.id = d.file_id
 where f.location like "%Crazy English Summer%";
 ```
+
+On my old computer it indexes 1500 files within 1 minute, so it should be fast!
