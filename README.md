@@ -21,7 +21,16 @@ The resulting database will have the "files", "metadata" and "details" tables.
 filename - directory - full location - file extension - index date
 
 **metadata:**  
-artist - album - song title - year/date - genre - track number - total tracks (in case of album)
+artist - album - song title - year/date - genre - track number - total tracks (in case of album) - file id (foreign key to files)
 
 **details:**  
-length - bits/bitrate - channels - sample rate
+length - bits/bitrate - channels - sample rate - file id (foreign key to files)
+
+**A simple query would give you back your results**
+
+```sqlite3
+select f.location, m.artist, m.album, m.title, m.year, m.tracknumber, m.totaltracks, d.length, d.bits, d.sample_rate from files f 
+left join metadata m on f.id = m.file_id 
+left join details d on f.id = d.file_id
+where f.location like "%Crazy English Summer%";
+```
