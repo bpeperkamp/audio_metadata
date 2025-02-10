@@ -6,7 +6,9 @@ The resulting database is Sqlite file which you can use to search and query. It 
 
 ## You can use it as following
 
+```bash
 python main.py -d /music -f outfile
+```
 
 -d, or --directory is the directory to index.
 -f, or --database is the intended output file. It is optional, the default is music. (it will output music.db3 in the current path).
